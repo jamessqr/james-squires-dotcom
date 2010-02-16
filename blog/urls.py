@@ -1,7 +1,7 @@
 from django.conf.urls.defaults import *
 
 urlpatterns = patterns('',
-	(r'^$', 'blog.admin.views.index'),
+	(r'^admin/$', 'blog.admin.views.index'),
     # Example:
     # (r'^blog_app/', include('blog_app.foo.urls')),
 
