@@ -10,6 +10,6 @@ def index(request):
 		entryform = admin_forms.EntryForm(request.POST)
 		if entryform.is_valid():
 			entry = entryform.save()
-			#return render_to_response('index.html')		
+			#return render_to_response('admin.html')		
 	payload = dict(entryform=entryform)
-	return render_to_response('index.html',payload)
+	return render_to_response('admin.html',payload)

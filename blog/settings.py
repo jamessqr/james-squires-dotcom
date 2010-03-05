@@ -76,5 +76,6 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-	'blog.admin'
+	'blog.admin',
+	'blog.public',
 )
