@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/james-squires.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -40,35 +41,29 @@
 </head>
 <body>
 
-
-
-	<!-- Primary Page Layout
-	================================================== -->
-
 	<div class="container">
 		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Skeleton</h1>
-			<h5>Version 1.1</h5>
-			<hr />
-		</div>
-		<div class="one-third column">
-			<h3>About Skeleton?</h3>
-			<p>{% block contents %}
-			Hello world!
-			{% endblock %}</p>
-		</div>
-		<div class="one-third column">
-			<h3>Three Core Principles</h3>
-			<p>Skeleton is built on three core principles:</p>
-			<ul class="square">
-				<li><strong>A Responsive Grid Down To Mobile</strong>: Elegant scaling from a browser to tablets to mobile.</li>
-				<li><strong>Fast to Start</strong>: It's a tool for rapid development with best practices</li>
-				<li><strong>Style Agnostic</strong>: It provides the most basic, beautiful styles, but is meant to be overwritten.</li>
-			</ul>
-		</div>
-		<div class="one-third column">
-			<h3>Docs &amp; Support</h3>
-			<p>The easiest way to really get started with Skeleton is to check out the full docs and info at <a href="http://www.getskeleton.com">www.getskeleton.com.</a>. Skeleton is also open-source and has a <a href="https://github.com/dhgamache/skeleton">project on git</a>, so check that out if you want to report bugs or create a pull request. If you have any questions, thoughts, concerns or feedback, please don't hesitate to email me at <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.</p>
+			<h1 id="logo">James Squires</h1>
+			<h5 style="text-align:center;margin-bottom: 40px;">An outdoor journal</h5>
+			<nav>
+				<ul>
+					<li><a href="#">Front Page</a></li>
+					<li><a href="#">About + Contact</a></li>
+					<li><a href="#">Archives</a></li>
+				</ul>
+				<hr />
+			</nav>			
+		</div>		
+		
+		<div class="sixteen columns clearfix">
+			<div class="eleven columns alpha">		
+				{% block contents %}{% endblock %}
+			</div>
+
+			<div class="five columns omega">
+				<h3>Extra Blog Content Goes Here</h3>
+				<p>RSS Feed</p>
+			</div>
 		</div>
 
 	</div><!-- container -->
@@ -79,6 +74,21 @@
 	================================================== -->
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="javascripts/tabs.js"></script>
+	
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-31273906-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
 
 <!-- End Document
 ================================================== -->
