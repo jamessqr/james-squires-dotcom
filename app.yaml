@@ -4,8 +4,13 @@ runtime: python
 api_version: 1
 
 handlers:
-- url: /static
-  static_dir: static
+- url: /stylesheets
+  static_dir: blog/stylesheets
+  
+- url: /javascripts
+  static_dir: blog/javascripts  
     
 - url: /.*
   script: main.py
+  
+
