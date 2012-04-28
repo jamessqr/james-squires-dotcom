@@ -1,10 +1,16 @@
 /* James Squires Blog Styles
 ================================================== */
 
-#logo {
-	margin-top: 40px;
-	text-align:center;
-	font-family: Georgia, serif;
+h1.logo {
+	text-indent: -119988px;
+	overflow: hidden;
+	text-align: left;
+	background-image: url('../images/james-squires.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 303px;
+	height: 63px;
+	margin: 0 auto; 
 }
 
 nav {
