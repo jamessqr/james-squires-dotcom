@@ -5,8 +5,11 @@ Blog of James Squires
 {% endblock %}
 
 {% block contents %}
-<h3>Morel Hunting</h3>
-<p>April 26, 2012</p>
+
+{% for Entry in Entries %}
+
+<h3>{{ Entry.title }}</h3>
+<p>{{ Entry.created_on|date:"M d, Y" }}</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida euismod pulvinar. Cras fermentum nulla eget nibh egestas sagittis. Donec consectetur magna in odio consectetur ac laoreet lorem vestibulum. Integer eget feugiat tellus. Fusce tincidunt auctor erat eu pellentesque. Curabitur nec turpis ac erat ultrices ornare at a sem. Nunc volutpat ante nec enim condimentum id dapibus neque egestas. Maecenas pellentesque eleifend est, eu interdum massa egestas id. Fusce aliquet accumsan gravida. Suspendisse hendrerit venenatis nulla, ut imperdiet nisl mattis viverra. Duis vitae feugiat urna.</p>
 <p>Ut hendrerit feugiat elit, quis ornare arcu ultrices ac. Donec ornare, augue sit amet egestas malesuada, mauris arcu viverra est, sit amet pretium elit odio sed sapien. Morbi id elit ac nunc posuere suscipit. Suspendisse sagittis facilisis ipsum, ut placerat tortor feugiat eget. Donec erat nulla, rutrum ut posuere sed, aliquam nec risus. Mauris non scelerisque diam. Curabitur fermentum porttitor dolor quis aliquet. Nunc accumsan blandit vulputate. Sed porta faucibus leo, id convallis tortor venenatis vitae.</p>
 <ul class="square">
@@ -14,4 +17,5 @@ Blog of James Squires
 	<li><strong>Fast to Start</strong>: It's a tool for rapid development with best practices</li>
 	<li><strong>Style Agnostic</strong>: It provides the most basic, beautiful styles, but is meant to be overwritten.</li>
 </ul>
+{% endfor %}
 {% endblock %}

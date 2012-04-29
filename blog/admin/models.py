@@ -7,7 +7,6 @@ class Entry(db.Model):
 	description = db.TextProperty()
 	slug = db.StringProperty() #double check datatype
 	created_on = db.DateTimeProperty(auto_now="true")
-	created_by = db.UserProperty(auto_current_user="true")
 	
 	#TODO
 	#Tags, categories
