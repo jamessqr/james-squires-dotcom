@@ -1,7 +1,7 @@
 import os
 # Django settings for blog_app project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -63,6 +63,14 @@ MIDDLEWARE_CLASSES = (
     #'django.contrib.sessions.middleware.SessionMiddleware',
     #'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.doc.XViewMiddleware',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+#    'django.core.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+#    'django.core.context_processors.media',  # 0.97 only.
+#    'django.core.context_processors.request',
 )
 
 ROOT_URLCONF = 'blog.urls'

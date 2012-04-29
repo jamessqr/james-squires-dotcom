@@ -5,6 +5,11 @@
 	line-height: 1.75;
 }
 
+.social-buttons {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
 img {
 	max-width: 100%;
 }
