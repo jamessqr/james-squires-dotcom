@@ -5,6 +5,10 @@
 	line-height: 1.75;
 }
 
+img {
+	max-width: 100%;
+}
+
 h1.logo {
 	text-indent: -119988px;
 	overflow: hidden;
