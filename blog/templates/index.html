@@ -8,7 +8,7 @@ Blog of James Squires
 
 {% for Entry in Entries %}
 
-<h3>{{ Entry.title }}</h3>
+<h3><a href="/{{ Entry.slug }}">{{ Entry.title }}</a></h3>
 <p>{{ Entry.created_on|date:"M d, Y" }}</p>
 {{ Entry.excerpt_html }}
 <div class="social-buttons">
