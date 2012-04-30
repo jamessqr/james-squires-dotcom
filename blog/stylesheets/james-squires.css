@@ -26,6 +26,10 @@ h1.logo {
 	margin: 0 auto; 
 }
 
+h3 a {
+	text-decoration: none;
+}
+
 nav {
 	font-family: Georgia, serif;
 	text-align: center;	
