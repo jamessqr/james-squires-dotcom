@@ -1,7 +1,7 @@
 import os
 # Django settings for blog_app project.
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (

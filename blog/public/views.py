@@ -24,6 +24,3 @@ def entry_detail(request, queryset, slug):
 		raise Http404()
 		
 	return render_to_response('entry_detail.html',{ 'Entries': Entries})
-	
-def feed(request):
-	return render_to_response('feed.html')
