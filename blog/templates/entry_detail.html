@@ -1,10 +1,13 @@
 {% extends 'master.html' %}
 
 {% block title %}
-Blog of James Squires
+{% for Entry in Entries %}
+{{ Entry.title }} - Blog of James Squires
+{% endfor %}
 {% endblock %}
 
 {% block contents %}
+
 {% for Entry in Entries %}
 
 <h3><a href="/{{ Entry.slug }}">{{ Entry.title }}</a></h3>
@@ -14,5 +17,6 @@ Blog of James Squires
 	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.james-squires.com/{{ Entry.slug }}">Tweet</a>
 	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.james-squires.com%2F{{ Entry.slug }}&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>
 </div>
+
 {% endfor %}
 {% endblock %}

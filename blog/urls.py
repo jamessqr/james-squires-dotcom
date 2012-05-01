@@ -8,7 +8,7 @@ entry_info_dict = {
 }
 
 urlpatterns = patterns('',
-	(r'^admin/$', 'blog.admin.views.index'),
+	(r'^admin-hidden/$', 'blog.admin.views.index'),
 	(r'^$', 'blog.public.views.index'),
 	(r'^archive/', 'blog.public.views.archive'),
 	(r'^about/', 'blog.public.views.about'),
