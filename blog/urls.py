@@ -12,7 +12,7 @@ urlpatterns = patterns('',
 	(r'^$', 'blog.public.views.index'),
 	(r'^archive/', 'blog.public.views.archive'),
 	(r'^about/', 'blog.public.views.about'),
-	(r'^(?P<slug>[a-zA-Z0-9_.-]+)/$', 'blog.public.views.entry_detail', entry_info_dict),
+	(r'^(?P<slug>[a-zA-Z0-9_.-]+)/$', 'blog.public.views.entry_detail', entry_info_dict),	
     # Example:
     # (r'^blog_app/', include('blog_app.foo.urls')),
 
