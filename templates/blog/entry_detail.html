@@ -8,12 +8,12 @@
 
 {% block contents %}
 
-<h3><a href="/{{ object.slug }}">{{ object.title }}</a></h3>
+<h3><a href="/{{ object.get_absolute_url }}">{{ object.title }}</a></h3>
 <p>{{ object.pub_date|date:"F j, Y" }}</p>
 {{ object.body|safe }}
 <div class="social-buttons">
-	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.james-squires.com/{{ object.slug }}">Tweet</a>
-	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.james-squires.com%2F{{ object.slug }}&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.james-squires.com{{ object.get_absolute_url }}">Tweet</a>
+	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.james-squires.com%2F{{ object.get_absolute_url }}&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>
 </div>
 
 {% endblock %}
