@@ -18,8 +18,11 @@ class LatestEntriesFeed(BlogFeed):
     def items(self):
         return Entry.objects.order_by('-pub_date')[:10]
 
-    def item_title(self, item):
-        return item.title
+	def item_title(self, item):
+		return item.title
+		
+	def item_pubdate(self, item):
+		return item.pub_date
 
     def item_description(self, item):
-        return item.body
+		return item.body
