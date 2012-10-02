@@ -1,9 +1,7 @@
 {% extends 'master.html' %}
 
 {% block title %}
-{% for Entry in Entries %}
-{{ Entry.title }} - Blog of James Squires
-{% endfor %}
+{{ object.title }} - Blog of James Squires
 {% endblock %}
 
 {% block contents %}
