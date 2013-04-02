@@ -37,3 +37,7 @@ Thumbs.db
 # Google AppEngine Stuff #
 ##########################
 .gaedata
+./dbindexer
+./django
+./djangoappengine
+./djangotoolbox
