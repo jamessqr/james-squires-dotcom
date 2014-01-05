@@ -8,6 +8,7 @@ Blog of James Squires
 
 {% for entry in entry_list %}
 
+<article>
 <h3><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h3>
 <p>{{ entry.pub_date|date:"F j, Y" }}</p>
 {{ entry.body|safe }}
@@ -15,6 +16,7 @@ Blog of James Squires
 	<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ entry.title }} - http://www.james-squires.com/{{ entry.get_absolute_url }}">Tweet</a>
 	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.james-squires.com{{ entry.get_absolute_url }}&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>
 </div>
+</article>
 {% endfor %}
 <p><a href="/archive">Older Posts</a></p>
 {% endblock %}
