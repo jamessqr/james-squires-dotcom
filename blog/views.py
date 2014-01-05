@@ -7,5 +7,14 @@ def entries_index(request):
 def archive(request):
 	return render_to_response('blog/entry_archive.html')
 
+def archive_2012(request):
+	return render_to_response('blog/entry_archive_2012.html', { 'entry_list': Entry.objects.all })
+
+def archive_2013(request):
+	return render_to_response('blog/entry_archive_2013.html', { 'entry_list': Entry.objects.all })
+
+def archive_2014(request):
+	return render_to_response('blog/entry_archive_2014.html', { 'entry_list': Entry.objects.all })
+
 def about(request):
 	return render_to_response('blog/about.html')
